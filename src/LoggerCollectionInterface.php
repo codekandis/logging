@@ -20,7 +20,7 @@ interface LoggerCollectionInterface extends Countable, Iterator, LoggerInterface
 
 	/**
 	 * Gets the current logger.
-	 * @return mixed The current logger.
+	 * @return LoggerInterface The current logger.
 	 */
 	public function current();
 

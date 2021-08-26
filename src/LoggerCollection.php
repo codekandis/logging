@@ -96,7 +96,7 @@ class LoggerCollection extends AbstractLogger implements LoggerCollectionInterfa
 	{
 		foreach ( $loggers as $logger )
 		{
-			if ( true === in_array( $logger, $this->loggers ) )
+			if ( true === in_array( $logger, $this->loggers, true ) )
 			{
 				throw new LoggerExistsException( static::ERROR_LOGGER_EXISTS );
 			}
